@@ -1,0 +1,7 @@
+cvs -q
+update -d -P
+checkout -P
+diff -u
+rdiff -u
+release -d
+remove -f
