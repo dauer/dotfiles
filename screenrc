@@ -1,0 +1,3 @@
+shell -$SHELL
+hardstatus alwayslastline "[%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<] %-8= [%c]"
+startup_message off
