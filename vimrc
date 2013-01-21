@@ -17,7 +17,7 @@ set ai
 filetype plugin indent on
 
 " Tabs
-" switching tabs on shit+tab
+" switching tabs on shift+tab
 map <s-tab> :tabn<CR>
 " new tab on ctrl+n
 map <C-n> :tabe<CR>
