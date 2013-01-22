@@ -8,7 +8,7 @@ A repository for storing my dotfiles...
 ### .gitconfig ###
 Enter a valid email
 
-### .profile ###
+### .bashrc ###
 Install keychain:
 
 $sudo apt-get install keychain
