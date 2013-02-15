@@ -31,3 +31,6 @@
  
 [alias]
     lg = log --decorate
+
+[core]
+    pager = more
