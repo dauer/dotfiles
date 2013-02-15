@@ -1,5 +1,5 @@
 [user]
-	email = email@example.com
+    email = email@example.com
     name = Thomas Rasmussen
 
 [color]
@@ -34,3 +34,4 @@
 
 [core]
     pager = more
+    editor = vim
