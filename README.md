@@ -5,6 +5,8 @@ A repository for storing my dotfiles...
 
 ## TODO ##
 
+Add dot '.' to filenames and copy to $HOME folder.
+
 ### .gitconfig ###
 Enter a valid email
 
