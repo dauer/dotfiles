@@ -35,3 +35,6 @@
 [core]
     pager = more
     editor = vim
+
+[i18n]
+    logOutputEncoding = utf8
