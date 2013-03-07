@@ -38,3 +38,6 @@
 
 [i18n]
     logOutputEncoding = utf8
+
+[help]
+    autocorrect = 1
