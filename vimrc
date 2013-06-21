@@ -44,3 +44,7 @@ set noswapfile
 map <s-tab> :tabn<CR>
 " new tab on ctrl+n
 map <C-n> :tabe<CR>
+
+" highligt trailing whitespaces
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:match ExtraWhitespace /\s\+$/
