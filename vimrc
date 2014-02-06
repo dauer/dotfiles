@@ -45,6 +45,11 @@ map <s-tab> :tabn<CR>
 " new tab on ctrl+n
 map <C-n> :tabe<CR>
 
+" Show syntax highlight name when pressing F10 on word
+map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+            \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+            \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+
 " highligt trailing whitespaces
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
