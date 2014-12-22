@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+#
+# Frontend for vpnc
+
+case "$1" in
+
+start)
+  sudo vpnc-connect ~/.vpn/vpn.conf
+  ;;
+stop)
+  sudo vpnc-disconnect
+  ;;
+status)
+  ps uaxf | grep vpnc-connect | grep -v grep
+  ;;
+restart)
+  sudo vpnc-disconnect
+  sudo vpnc-connect ~/.vpn/vpn.conf
+  ;;
+*)
+  echo "Usage: vpn (start|stop|status|restart)"
+  exit 1
+  ;;
+
+esac
