@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#
 # Frontend for vpnc
 
 case "$1" in
