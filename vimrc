@@ -22,6 +22,8 @@ set is
 set ci
 " highlight search
 set hlsearch
+"ignore case when searching
+set ignorecase
 " always show statusline
 set laststatus=2
 set ruler
