@@ -62,3 +62,6 @@ if &term =~ '256color'
     " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
     set t_ut=
 endif
+
+" reset terminal on exit to fix color issue
+au VimLeave * !reset
