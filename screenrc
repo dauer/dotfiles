@@ -1,4 +1,5 @@
 shell -$SHELL
 hardstatus alwayslastline '[%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<] %-30= Load: %l | %c'
 startup_message off
-defbce on    # use current bg color for erased chars
+defbce on          # use current bg color for erased chars
+defscrollback 5000 # history default: 100
