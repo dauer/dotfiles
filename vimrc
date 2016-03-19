@@ -56,12 +56,20 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
 
-if &term =~ '256color'
+" Pathogen
+" https://github.com/tpope/vim-pathogenn
+execute pathogen#infect()
+call pathogen#infect()
+
+" https://github.com/scrooloose/nerdtree
+autocmd vimenter * NERDTree
+
+"if &term =~ '256color'
     " disable Background Color Erase (BCE) so that color schemes
     " render properly when inside 256-color tmux and GNU screen.
     " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
-    set t_ut=
-endif
+"    set t_ut=
+"endif
 
 " reset terminal on exit to fix color issue
-au VimLeave * !reset
+"au VimLeave * !reset
