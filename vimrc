@@ -63,6 +63,9 @@ call pathogen#infect()
 
 " https://github.com/scrooloose/nerdtree
 autocmd vimenter * NERDTree
+autocmd VimEnter * wincmd p
+" Hidden files shown as default. Shift + i to toggle hidden files
+let NERDTreeShowHidden=1
 
 "if &term =~ '256color'
     " disable Background Color Erase (BCE) so that color schemes
