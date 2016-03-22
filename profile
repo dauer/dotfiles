@@ -11,6 +11,13 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+function gpr() {
+    while [[ $PWD != '/' && ! -d ".git" ]]
+    do
+        cd ..
+    done
+}
+
 # set editor and pager
 export PAGER="more"
 export EDITOR="vim"
