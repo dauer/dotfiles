@@ -1,6 +1,7 @@
 alias cd..='cd ..'
 alias vi='vim'
 alias cgrep='grep --color=always'
+alias ll='ls -al'
 
 # Grails
 alias gr='grails -reloading run-app -echoOut -plain-output'
