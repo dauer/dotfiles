@@ -12,10 +12,14 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 function gpr() {
+    ORIGIN=$PWD
     while [[ $PWD != '/' && ! -d ".git" ]]
     do
         cd ..
     done
+    if [ $PWD == '/' ]; then
+        cd $ORIGIN
+    fi
 }
 
 # set editor and pager
