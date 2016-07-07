@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
-#
-# Shows Git branches for projects in current folder
+
+# Shows Git branches not merged into master for projects in current folder
 
 for dir in ./*; do (
     if [ -d $dir ]; then
         cd "$dir" &&
         if [ -d '.git' ]; then
-            branch=`git branch`
-            echo -e "\e[4m\e[1m$dir\e[0m"
+            branch=`git branch --no-merge` &&
             echo -e "$branch \t $dir";
         fi
     fi
