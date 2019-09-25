@@ -45,10 +45,10 @@
     autocorrect = 0
 
 [push]
-	default = simple
+    default = simple
 
 [pull]
-	rebase = true
+    rebase = true
 
 [rebase]
-	autoStash = true
+    autoStash = true
