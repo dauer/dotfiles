@@ -13,10 +13,10 @@ Enter a valid email
 ### .bashrc ###
 Install keychain:
 
-$sudo apt-get install keychain
+    $sudo apt-get install keychain
 
 Add directory for keychan to store files in 
 
-$mkdir ~/.keychain
+    $mkdir ~/.keychain
 
-$chmod 700 ~/.keychain
+    $chmod 700 ~/.keychain
