@@ -56,7 +56,7 @@ map <C-n> :tabe<CR>
 :match ExtraWhitespace /\s\+$/
 
 " Pathogen
-" https://github.com/tpope/vim-pathogenn
+" https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
 call pathogen#infect()
 
