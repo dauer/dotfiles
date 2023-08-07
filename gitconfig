@@ -42,7 +42,7 @@
     logOutputEncoding = utf8
 
 [help]
-    autocorrect = 0
+    autocorrect = prompt
 
 [push]
     default = simple
@@ -52,3 +52,10 @@
 
 [rebase]
     autoStash = true
+
+[diff]
+    tool = vimdiff
+
+[init]
+    defaultBranch = "master"
+
