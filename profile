@@ -25,3 +25,4 @@ function gpr() {
 # set editor and pager
 export PAGER="more"
 export EDITOR="vim"
+export VISUAL="vim"
